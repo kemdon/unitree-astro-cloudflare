@@ -1,0 +1,40 @@
+---
+import { withLocaleParam } from '@/lib/i18n'
+
+interface Props {
+  eyebrow?: string
+  title: string
+  description: string
+  primaryCtaLabel?: string
+  primaryCtaHref?: string
+  secondaryCtaLabel?: string
+  secondaryCtaHref?: string
+  image?: string
+}
+
+const { eyebrow, title, description, primaryCtaLabel, primaryCtaHref, secondaryCtaLabel, secondaryCtaHref, image } =
+  Astro.props
+---
+
+<section class="block panel hero">
+  <div class="hero__content">
+    {eyebrow && <span class="hero__eyebrow">{eyebrow}</span>}
+    <h1 class="hero__title">{title}</h1>
+    <p class="hero__description">{description}</p>
+    {(primaryCtaLabel || secondaryCtaLabel) && (
+      <div class="hero__actions">
+        {primaryCtaLabel && primaryCtaHref && (
+          <a class="button button--primary" href={withLocaleParam(primaryCtaHref)}>{primaryCtaLabel}</a>
+        )}
+        {secondaryCtaLabel && secondaryCtaHref && (
+          <a class="button button--secondary" href={withLocaleParam(secondaryCtaHref)}>{secondaryCtaLabel}</a>
+        )}
+      </div>
+    )}
+  </div>
+  {image && (
+    <div class="hero__media">
+      <img src={image} alt={title} loading="eager" />
+    </div>
+  )}
+</section>

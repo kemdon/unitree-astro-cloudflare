@@ -1,0 +1,90 @@
+{
+  "siteName": "宇树科技 Unitree Robotics",
+  "brand": {
+    "primary": "#1dd2d9",
+    "secondary": "#6ff1d6",
+    "logoText": "宇树科技"
+  },
+  "contact": {
+    "phone": "400-626-6518",
+    "email": "sales_global@unitree.com",
+    "address": "中国杭州滨江区"
+  },
+  "seo": {
+    "defaultTitle": "宇树科技 | 人形机器人_四足机器人_机器狗",
+    "defaultDescription": "宇树科技专注于消费级、行业级高性能四足机器人、人形机器人、灵巧机械臂与具身智能平台，覆盖科研、巡检、应急消防和数据采集等真实场景。"
+  },
+  "navigation": [
+    {
+      "label": "首页",
+      "href": "/"
+    },
+    {
+      "label": "行业方案",
+      "href": "/products"
+    },
+    {
+      "label": "旗舰产品",
+      "href": "/go2"
+    },
+    {
+      "label": "关于宇树",
+      "href": "/about"
+    },
+    {
+      "label": "联系我们",
+      "href": "/contact"
+    }
+  ],
+  "featuredLinks": [
+    {
+      "label": "新闻中心",
+      "href": "/about"
+    },
+    {
+      "label": "商务咨询",
+      "href": "/contact"
+    }
+  ],
+  "footerGroups": [
+    {
+      "title": "机器人平台",
+      "links": [
+        { "label": "Go2 四足机器人", "href": "/go2" },
+        { "label": "B2 巡检机器人", "href": "/b2" },
+        { "label": "G1 人形机器人", "href": "/g1" },
+        { "label": "H1 通用人形", "href": "/h1" }
+      ]
+    },
+    {
+      "title": "解决方案",
+      "links": [
+        { "label": "四足智能巡检方案", "href": "/products" },
+        { "label": "消防应急方向", "href": "/products" },
+        { "label": "科研训练与数采", "href": "/go2" }
+      ]
+    },
+    {
+      "title": "企业信息",
+      "links": [
+        { "label": "关于宇树", "href": "/about" },
+        { "label": "联系团队", "href": "/contact" }
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/channel/UCsMbp4V8oxzHCMdOUP-3oWw"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/UnitreeRobotics"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/UnitreeRobotics"
+    }
+  ],
+  "legalText": "Copyright © 2016 - 2026 Unitree Robotics. 宇树科技股份有限公司版权所有。"
+}

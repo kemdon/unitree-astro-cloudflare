@@ -1,0 +1,28 @@
+---
+import '@/styles/global.css'
+import SiteForm from '@/components/admin/SiteForm'
+import { loadSite } from '@/lib/loader'
+
+const site = await loadSite(Astro.locals.env)
+---
+
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin / Site</title>
+  </head>
+  <body>
+    <div class="admin-wrap">
+      <div class="admin-header">
+        <div class="admin-toolbar">
+          <h1>Site 设置</h1>
+          <form action="/api/admin/logout" method="post">
+            <button class="button button--secondary" type="submit">退出登录</button>
+          </form>
+        </div>
+      </div>
+      <SiteForm client:load site={site} />
+    </div>
+  </body>
+</html>

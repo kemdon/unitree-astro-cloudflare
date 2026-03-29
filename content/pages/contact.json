@@ -1,0 +1,48 @@
+{
+  "id": "contact",
+  "pageType": "standard",
+  "slug": "/contact",
+  "title": "联系我们",
+  "seo": {
+    "title": "联系我们 - 宇树科技",
+    "description": "联系宇树科技商务与项目团队，咨询机器人产品、行业方案和合作路径。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Contact",
+        "title": "联系宇树团队，确认平台、场景与交付方式。",
+        "description": "如果你已经明确应用场景、机器人类型、预算区间或交付周期，可以直接通过邮件或电话联系团队。",
+        "primaryCtaLabel": "发送邮件",
+        "primaryCtaHref": "mailto:sales_global@unitree.com",
+        "secondaryCtaLabel": "查看行业方案",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/home/hero-home.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "联系信息",
+        "items": [
+          {
+            "title": "商务邮箱",
+            "description": "sales_global@unitree.com",
+            "icon": ""
+          },
+          {
+            "title": "销售热线",
+            "description": "400-626-6518",
+            "icon": ""
+          },
+          {
+            "title": "公司地址",
+            "description": "中国杭州滨江区",
+            "icon": ""
+          }
+        ]
+      }
+    }
+  ]
+}

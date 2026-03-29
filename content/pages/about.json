@@ -1,0 +1,35 @@
+{
+  "id": "about",
+  "pageType": "standard",
+  "slug": "/about",
+  "title": "关于宇树",
+  "seo": {
+    "title": "About Unitree - Unitree Robotics",
+    "description": "了解宇树科技的机器人平台、产品方向与合作方式。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "About Unitree",
+        "title": "宇树持续把机器人从实验室带到真实世界。",
+        "description": "从四足机器人到人形平台，宇树围绕消费级体验、行业方案和具身智能平台推进持续迭代。",
+        "primaryCtaLabel": "联系宇树",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看行业方案",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/home/robot-h1.jpg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "公司简介",
+        "paragraphs": [
+          "宇树科技是一家世界知名的民用机器人公司，专注于消费级、行业级高性能四足机器人、人形机器人及相关具身智能能力的研发、生产和销售。",
+          "正式前台文案保持业务语义，不暴露重建或后台术语。"
+        ]
+      }
+    }
+  ]
+}

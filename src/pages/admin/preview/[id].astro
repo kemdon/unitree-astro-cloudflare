@@ -1,0 +1,54 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { blockRegistry } from '@/lib/blocks'
+import { getLocalizedValue, withLocaleParam } from '@/lib/i18n'
+import { loadNavigationPages, loadPage, loadSite } from '@/lib/loader'
+
+const { id } = Astro.params
+const runtimeEnv = Astro.locals.env
+
+if (!id) {
+  return Astro.redirect('/admin/pages')
+}
+
+let page = null
+
+try {
+  page = await loadPage(runtimeEnv, id)
+} catch {
+  page = null
+}
+
+if (!page) {
+  return Astro.redirect('/admin/pages')
+}
+
+const site = await loadSite(runtimeEnv)
+const allPages = await loadNavigationPages(runtimeEnv)
+---
+
+<BaseLayout
+  title={getLocalizedValue(page.seo.title)}
+  description={getLocalizedValue(page.seo.description)}
+  site={site}
+  currentPath={Astro.url.pathname}
+>
+  <div class="shell">
+    <section class="panel admin-preview-banner">
+      <div>
+        <p class="muted">Admin Preview</p>
+        <h1>页面预览：{getLocalizedValue(page.title)}</h1>
+        <p class="muted">该页面复用真实前台布局和 block 渲染链路。当前预览基于已保存内容。</p>
+      </div>
+      <div class="inline-actions">
+        <a class="button button--secondary" href="/admin/pages">返回页面管理</a>
+        <a class="button button--primary" href={withLocaleParam(page.slug)}>打开正式路由</a>
+      </div>
+    </section>
+
+    {page.blocks.map((block) => {
+      const Component = blockRegistry[block.type] as any
+      return <Component {...block.props} allPages={allPages} />
+    })}
+  </div>
+</BaseLayout>

@@ -1,0 +1,36 @@
+{
+  "id": "b2-w",
+  "pageType": "product-detail",
+  "slug": "/b2-w",
+  "title": "B2-W",
+  "seo": {
+    "title": "Unitree B2-W 超越距离 释放效能 - 宇树科技",
+    "description": "B2-W 以轮足方案延伸移动效率，适合更长距离巡航任务。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "轮足方案",
+        "title": "B2-W 把长距离效率带进四足平台体系。",
+        "description": "适合更长距离移动与跨区域巡航任务，是行业级机器人平台的延展形态。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回方案页",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/solutions/solution-manage.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "B2-W 关注重点",
+        "items": [
+          { "title": "更高移动效率", "description": "适合园区和道路型场景。", "icon": "" },
+          { "title": "跨区域巡航", "description": "兼顾效率与复杂环境适应。", "icon": "" },
+          { "title": "方案可扩展", "description": "适合与集控和载荷系统整合。", "icon": "" }
+        ]
+      }
+    }
+  ]
+}

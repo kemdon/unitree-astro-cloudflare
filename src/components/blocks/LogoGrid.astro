@@ -1,0 +1,37 @@
+---
+interface LogoItem {
+  name: string
+  image: string
+  href?: string
+}
+
+interface Props {
+  title: string
+  description?: string
+  logos: LogoItem[]
+}
+
+const { title, description, logos } = Astro.props
+---
+
+<section class="block panel logo-grid">
+  <h2 class="section-title">{title}</h2>
+  {description && <p class="section-description">{description}</p>}
+  <div class="logo-grid__list">
+    {logos.map((logo) => {
+      const content = logo.image ? (
+        <img src={logo.image} alt={logo.name} loading="lazy" />
+      ) : (
+        <span class="logo-grid__placeholder">{logo.name}</span>
+      )
+
+      return logo.href ? (
+        <a class="logo-grid__item" href={logo.href} rel="noreferrer" target="_blank">
+          {content}
+        </a>
+      ) : (
+        <div class="logo-grid__item">{content}</div>
+      )
+    })}
+  </div>
+</section>

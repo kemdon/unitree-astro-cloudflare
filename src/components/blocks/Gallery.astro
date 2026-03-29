@@ -1,0 +1,30 @@
+---
+interface Props {
+  eyebrow?: string
+  title: string
+  description?: string
+  images: Array<{
+    src: string
+    alt?: string
+    caption?: string
+  }>
+}
+
+const { eyebrow, title, description, images } = Astro.props
+---
+
+<section class="block panel gallery">
+  <div class="gallery__header">
+    {eyebrow && <span class="hero__eyebrow">{eyebrow}</span>}
+    <h2 class="section-title">{title}</h2>
+    {description && <p class="section-description">{description}</p>}
+  </div>
+  <div class="gallery__grid">
+    {images.map((image, index) => (
+      <figure class={`gallery__item ${index === 0 ? 'gallery__item--hero' : ''}`}>
+        <img src={image.src} alt={image.alt || title} loading="lazy" />
+        {image.caption && <figcaption>{image.caption}</figcaption>}
+      </figure>
+    ))}
+  </div>
+</section>

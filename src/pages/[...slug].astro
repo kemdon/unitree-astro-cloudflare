@@ -1,0 +1,47 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { blockRegistry } from '@/lib/blocks'
+import { getLocalizedValue } from '@/lib/i18n'
+import { loadNavigationPages, loadSite } from '@/lib/loader'
+
+const runtimeEnv = Astro.locals.env
+const site = await loadSite(runtimeEnv)
+const slugPath = `/${Astro.params.slug ?? ''}`.replace(/\/+$/, '') || '/'
+const allPages = await loadNavigationPages(runtimeEnv)
+const page = allPages.find((entry) => entry.slug === slugPath) ?? null
+const notFoundTitle = '页面不存在'
+const notFoundDescription = '当前路径还没有绑定页面内容。请先在后台创建对应页面。'
+
+if (!page) {
+  Astro.response.status = 404
+}
+---
+
+<BaseLayout
+  title={page ? getLocalizedValue(page.seo.title) || notFoundTitle : notFoundTitle}
+  description={page ? getLocalizedValue(page.seo.description) || notFoundDescription : notFoundDescription}
+  site={site}
+  currentPath={Astro.url.pathname}
+>
+  <div class="shell">
+    {page ? (
+      page.blocks.map((block) => {
+        const Component = blockRegistry[block.type] as any
+        return <Component {...block.props} allPages={allPages} />
+      })
+    ) : (
+      <section class="panel empty-site-state">
+        <h1>{notFoundTitle}</h1>
+        <p>{notFoundDescription}</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="/admin/pages">
+            创建页面
+          </a>
+          <a class="button button--secondary" href="/">
+            返回首页
+          </a>
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>

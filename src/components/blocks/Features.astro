@@ -1,0 +1,26 @@
+---
+interface FeatureItem {
+  title: string
+  description: string
+  icon?: string
+}
+
+interface Props {
+  title: string
+  items: FeatureItem[]
+}
+
+const { title, items } = Astro.props
+---
+
+<section class="block panel features">
+  <h2 class="section-title">{title}</h2>
+  <div class="feature-list">
+    {items.map((item) => (
+      <article class="feature-item">
+        <h3>{item.title}</h3>
+        <p class="muted">{item.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

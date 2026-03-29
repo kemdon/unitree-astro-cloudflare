@@ -1,0 +1,136 @@
+{
+  "id": "products",
+  "pageType": "product-list",
+  "slug": "/products",
+  "title": "四足智能巡检方案",
+  "seo": {
+    "title": "四足智能巡检方案 - 宇树科技",
+    "description": "以行业巡检为关键分类页模板，承接场景需求、能力模块、机器人选型与具体详情页入口。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "行业解决方案",
+        "title": "四足智能巡检方案",
+        "description": "面向电力、园区、厂站和复杂地形巡检，宇树以高机动四足平台承接全天候检查、风险预警、集控互联与多载荷定制。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看旗舰机型",
+        "secondaryCtaHref": "/go2",
+        "image": "/uploads/unitree/solutions/solution-hero.jpg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "为什么把它作为关键分类页基准模板",
+        "paragraphs": [
+          "因为它天然具备强分类上下文：场景目标、行业痛点、能力分组、机型差异和联系转化都在同一页内成立，适合锁定全站浏览型页面的节奏。",
+          "正式实现中，我们保留了“场景说明 + 优势条目 + 真实详情入口 + 联系团队”的信息组织方式，只清理了源站过度依赖长滚动说明和重复素材的部分。"
+        ]
+      }
+    },
+    {
+      "type": "showcase-grid",
+      "props": {
+        "eyebrow": "适配机器人与平台",
+        "title": "进入巡检项目时，先选平台，再定载荷和流程",
+        "description": "分类页不做空壳 archive，而是保持真实卡片密度，并确保每张卡片通向不同的详情页。",
+        "variant": "solution",
+        "items": [
+          {
+            "title": "Go2",
+            "subtitle": "轻量陪伴与科研平台",
+            "description": "适合室内外巡检验证、科研与轻量级场景快速部署，二次开发门槛低。",
+            "image": "/uploads/unitree/home/robot-go2.jpg",
+            "href": "/go2",
+            "tag": "消费级"
+          },
+          {
+            "title": "B2",
+            "subtitle": "工业级四足机器人",
+            "description": "高负载、长续航与复杂地形稳定通行，适合厂区、电站和高风险环境巡检。",
+            "image": "/uploads/unitree/solutions/solution-modular.jpg",
+            "href": "/b2",
+            "tag": "行业级"
+          },
+          {
+            "title": "B2-W",
+            "subtitle": "轮足形态方案",
+            "description": "更高移动效率与跨区域巡航能力，适合更长距离的园区与道路巡检任务。",
+            "image": "/uploads/unitree/solutions/solution-manage.jpg",
+            "href": "/b2-w",
+            "tag": "轮足平台"
+          },
+          {
+            "title": "G1",
+            "subtitle": "人形与操作能力",
+            "description": "在巡检之外延伸到抓取、操作、数据采集和人机协同，是复杂任务的上层平台。",
+            "image": "/uploads/unitree/home/robot-g1.jpg",
+            "href": "/g1",
+            "tag": "具身智能"
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "分类页必须保留的扫描重点",
+        "items": [
+          {
+            "title": "模块化载荷与可定制能力",
+            "description": "可见光、红外热像仪、声纹传感器、机械臂、无人机和灭火装置能够按场景组合。",
+            "icon": ""
+          },
+          {
+            "title": "集控互联与数据闭环",
+            "description": "设备状态、巡检记录与历史趋势能够统一上报并形成管理端数据资产。",
+            "icon": ""
+          },
+          {
+            "title": "降本增效与全天候运行",
+            "description": "一机替代多人重复巡检，高风险和高频任务交给机器人，人员聚焦异常处理和决策。",
+            "icon": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "media-text",
+      "props": {
+        "eyebrow": "典型场景",
+        "title": "从电力巡检切入，再扩展到消防、园区与复杂地形作业",
+        "description": "关键分类页负责锁定浏览型页面的上下文表达，而不是只剩下标题和卡片网格。",
+        "body": [
+          "当巡检任务需要跨越台阶、狭窄通道、坡道和复杂地面时，四足平台能比传统固定轨道和轮式设备拥有更高的环境适应性。",
+          "平台确认后，再根据是否需要热像、声学、抓取、喷射或集控对接，逐步确定最终的交付包。"
+        ],
+        "image": "/uploads/unitree/solutions/solution-cost.jpg",
+        "imageAlt": "行业巡检场景",
+        "buttonLabel": "联系项目团队",
+        "buttonHref": "/contact",
+        "layout": "image-left"
+      }
+    },
+    {
+      "type": "product-feed",
+      "props": {
+        "title": "更多真实机器人详情页",
+        "description": "分类页末段继续提供机型浏览入口，保持卡片密度和真实详情承接。",
+        "buttonLabel": "查看详情",
+        "emptyMessage": "暂无详情页，请先补充机器人详情。"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "已经明确巡检场景、预算或交付周期？",
+        "description": "把场景限制、巡检频次、期望载荷和安全要求发给我们，宇树团队会据此判断推荐平台与配置。",
+        "buttonLabel": "提交项目需求",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

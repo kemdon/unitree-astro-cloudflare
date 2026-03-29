@@ -1,0 +1,25 @@
+{
+  "id": "r1",
+  "pageType": "product-detail",
+  "slug": "/R1",
+  "title": "R1",
+  "seo": {
+    "title": "Unitree R1 | 宇树科技",
+    "description": "R1 作为人形方向产品之一，延续宇树在具身智能上的平台布局。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "平台延展",
+        "title": "R1 延续宇树在人形产品线上的平台布局。",
+        "description": "与 G1、H1 共同构成人形方向的前台产品层级，让分类页与首页保持完整产品谱系。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/home/robot-h1.jpg"
+      }
+    }
+  ]
+}

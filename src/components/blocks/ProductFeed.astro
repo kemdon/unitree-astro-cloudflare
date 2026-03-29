@@ -1,0 +1,60 @@
+---
+import { withLocaleParam } from '@/lib/i18n'
+import { listPublishedProductPages } from '@/lib/page-templates'
+import type { PageData } from '@/lib/schema'
+
+interface Props {
+  title: string
+  description?: string
+  buttonLabel: string
+  emptyMessage?: string
+  allPages?: PageData[]
+}
+
+const { title, description, buttonLabel, emptyMessage, allPages = [] } = Astro.props
+const productPages = listPublishedProductPages(allPages)
+
+function getProductCover(page: PageData) {
+  const heroBlock = page.blocks.find((block) => block.type === 'hero')
+  if (heroBlock?.type === 'hero' && heroBlock.props.image) {
+    return heroBlock.props.image
+  }
+
+  const galleryBlock = page.blocks.find((block) => block.type === 'gallery')
+  if (galleryBlock?.type === 'gallery' && galleryBlock.props.images[0]?.src) {
+    return galleryBlock.props.images[0].src
+  }
+
+  const mediaTextBlock = page.blocks.find((block) => block.type === 'media-text')
+  if (mediaTextBlock?.type === 'media-text' && mediaTextBlock.props.image) {
+    return mediaTextBlock.props.image
+  }
+
+  return ''
+}
+---
+
+<section class="block panel product-feed">
+  <h2 class="section-title">{title}</h2>
+  {description && <p class="section-description">{description}</p>}
+  {productPages.length > 0 ? (
+    <div class="showcase__grid">
+      {productPages.map((product) => (
+        <article class="showcase-card showcase-card--product-feed">
+          <div class="showcase-card__media">
+            {getProductCover(product) ? <img src={getProductCover(product)} alt={product.title} loading="lazy" /> : <div class="logo-grid__placeholder">图片待补充</div>}
+          </div>
+          <div class="showcase-card__body">
+            <h3>{product.title}</h3>
+            <p class="showcase-card__description">{product.seo.description}</p>
+          </div>
+          <a class="button button--secondary" href={withLocaleParam(product.slug)}>{buttonLabel}</a>
+        </article>
+      ))}
+    </div>
+  ) : (
+    <div class="feature-item">
+      <p class="muted">{emptyMessage || '暂无产品详情页。'}</p>
+    </div>
+  )}
+</section>

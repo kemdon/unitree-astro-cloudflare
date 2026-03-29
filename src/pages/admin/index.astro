@@ -1,0 +1,89 @@
+---
+import '@/styles/global.css'
+import { listPages } from '@/lib/storage'
+
+const pageMap = new Map((await listPages(Astro.locals.env)).map((page) => [page.id, page]))
+const templateEntries = [
+  {
+    id: 'home',
+    title: '首页',
+    description: '品牌主视觉、核心能力和转化入口。',
+  },
+  {
+    id: 'products',
+    title: '产品中心',
+    description: '产品线、解决方案与产品列表页。',
+  },
+  {
+    id: 'about',
+    title: '关于我们',
+    description: '公司定位、团队、资质与发展介绍。',
+  },
+  {
+    id: 'contact',
+    title: '联系我们',
+    description: '联系入口、联系方式与常见联系问题。',
+  },
+  {
+    id: 'product-detail',
+    title: '产品详情',
+    description: '单个产品或方案的详情模板页。',
+  },
+].filter((entry) => pageMap.has(entry.id))
+---
+
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="admin-wrap">
+      <header class="admin-header">
+        <div class="admin-toolbar">
+          <form action="/api/admin/logout" method="post">
+            <button class="button button--secondary" type="submit">退出登录</button>
+          </form>
+        </div>
+      </header>
+      <div class="admin-stack">
+        <section>
+          <div class="admin-header">
+            <h2>模块入口</h2>
+            <p class="muted">进入站点配置、页面管理和媒体管理。</p>
+          </div>
+          <div class="admin-grid">
+            <a class="admin-card" href="/admin/site">
+              <h2>Site 设置</h2>
+              <p class="muted">查看站点配置与双语字段结构。</p>
+            </a>
+            <a class="admin-card" href="/admin/pages">
+              <h2>页面管理</h2>
+              <p class="muted">查看页面列表与 block 数据。</p>
+            </a>
+            <a class="admin-card" href="/admin/media">
+              <h2>媒体管理</h2>
+              <p class="muted">上传、查看和删除媒体文件。</p>
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <div class="admin-header">
+            <h2>模板页快捷入口</h2>
+            <p class="muted">直接跳到官网常用模板页的编辑态。</p>
+          </div>
+          <div class="admin-grid">
+            {templateEntries.map((entry) => (
+              <a class="admin-card" href={`/admin/pages?pageId=${entry.id}`}>
+                <h2>{entry.title}</h2>
+                <p class="muted">{entry.description}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

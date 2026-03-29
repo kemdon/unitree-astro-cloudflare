@@ -1,0 +1,123 @@
+{
+  "id": "home",
+  "pageType": "standard",
+  "slug": "/",
+  "title": "宇树科技首页",
+  "seo": {
+    "title": "宇树科技 | 人形机器人_四足机器人_机器狗",
+    "description": "宇树科技是一家世界知名的民用机器人公司，覆盖四足机器人、人形机器人、灵巧机械臂、行业方案和具身智能平台。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Embodied Intelligence",
+        "title": "从四足到人形，宇树把具身智能带到真实世界。",
+        "description": "围绕消费级陪伴、行业巡检、消防应急、科研训练与数据采集，宇树科技构建了从机器人本体到算法平台再到场景方案的完整产品矩阵。",
+        "primaryCtaLabel": "查看行业方案",
+        "primaryCtaHref": "/products",
+        "secondaryCtaLabel": "进入旗舰产品",
+        "secondaryCtaHref": "/go2",
+        "image": "/uploads/unitree/home/hero-home.jpg"
+      }
+    },
+    {
+      "type": "showcase-grid",
+      "props": {
+        "eyebrow": "核心产品矩阵",
+        "title": "消费级、行业级与人形平台同步推进",
+        "description": "首页基准页保留源站“产品矩阵先建立认知，再由方案与事件承接”的节奏，不退化成宽松 marketing section。",
+        "variant": "product",
+        "items": [
+          {
+            "title": "Go2",
+            "subtitle": "消费级四足机器人",
+            "description": "4D 激光雷达、陪伴交互和二次开发接口兼具，是宇树消费级具身平台的代表机型。",
+            "image": "/uploads/unitree/home/robot-go2.jpg",
+            "href": "/go2",
+            "tag": "旗舰详情"
+          },
+          {
+            "title": "G1",
+            "subtitle": "人形机器人",
+            "description": "高自由度、力位混合控制与训练数据平台结合，适合研究、展示与通用操作任务。",
+            "image": "/uploads/unitree/home/robot-g1.jpg",
+            "href": "/g1",
+            "tag": "通用人形"
+          },
+          {
+            "title": "H1",
+            "subtitle": "双足平台",
+            "description": "全尺寸通用人形平台，承接运动能力、算法验证和具身智能场景演示。",
+            "image": "/uploads/unitree/home/robot-h1.jpg",
+            "href": "/h1",
+            "tag": "双足平台"
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "宇树前台首页必须保留的业务主轴",
+        "items": [
+          {
+            "title": "机器人本体持续迭代",
+            "description": "四足、人形、机械臂和感知部件保持同步迭代，让首页第一屏后立即建立产品广度认知。",
+            "icon": ""
+          },
+          {
+            "title": "行业方案直接落到真实场景",
+            "description": "巡检、消防、科研和数采不是抽象概念，而是可以指向具体方案页和具体机器人型号的交付路径。",
+            "icon": ""
+          },
+          {
+            "title": "品牌事件强化技术可信度",
+            "description": "春晚、冬奥等高曝光事件作为品牌证明，与合作伙伴展示共同构成首页后半段的信任承接。",
+            "icon": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "media-text",
+      "props": {
+        "eyebrow": "品牌与能力",
+        "title": "全球民用机器人公司里的高频真实交付者",
+        "description": "宇树并不把首页做成抽象品牌介绍页，而是通过产品、应用和事件共同建立技术成熟度。",
+        "body": [
+          "在消费级四足机器人之外，宇树持续推动行业巡检、人形操作、遥操作机械臂和数据采集链路，形成从机器人本体到软件能力的完整前台表达。",
+          "这类内容决定了首页后续所有扩展页的视觉语法：深色背景、密集卡片、强图像占比、明确的场景入口和不拐弯的转化路径。"
+        ],
+        "image": "/uploads/unitree/home/event-olympic.jpeg",
+        "imageAlt": "宇树机器人活动现场",
+        "buttonLabel": "了解行业方案",
+        "buttonHref": "/products",
+        "layout": "image-right"
+      }
+    },
+    {
+      "type": "logo-grid",
+      "props": {
+        "title": "合作伙伴 / 客户",
+        "description": "源站首页在尾部保留了一整块横向合作矩阵，这里沿用同样的信任承接方式。",
+        "logos": [
+          {
+            "name": "合作伙伴矩阵",
+            "image": "/uploads/unitree/home/partners.png",
+            "href": "/about"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "需要消费级机器人、行业巡检方案或具身智能平台合作？",
+        "description": "直接联系宇树团队，说明目标场景、交付周期和预期配置，我们会基于机器人平台与场景方案给出建议。",
+        "buttonLabel": "联系商务团队",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

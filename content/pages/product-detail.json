@@ -1,0 +1,124 @@
+{
+  "id": "product-detail",
+  "pageType": "product-detail",
+  "slug": "/go2",
+  "title": "Go2",
+  "seo": {
+    "title": "机器狗Go2_四足机器人_机器狗公司 | 宇树科技",
+    "description": "Go2 是宇树消费级四足机器人代表机型，以 4D 激光雷达、陪伴交互、二次开发能力和具身智能平台为重点。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "消费级四足机器人",
+        "title": "Go2 把陪伴、运动与具身开发装进一台四足机器人。",
+        "description": "围绕 4D 激光雷达、陪伴交互、无线控制、开发接口和真实场景移动能力，Go2 是宇树消费级平台里最完整的入口产品。",
+        "primaryCtaLabel": "联系销售",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看行业方案",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/products/go2-gallery-1.jpg"
+      }
+    },
+    {
+      "type": "gallery",
+      "props": {
+        "eyebrow": "产品图库",
+        "title": "首屏后先看外观与形态，再进入参数和场景",
+        "description": "关键详情页必须保留图库优先级，而不是直接变成字段堆叠页。",
+        "images": [
+          {
+            "src": "/uploads/unitree/products/go2-gallery-1.jpg",
+            "alt": "Go2 机器人正面",
+            "caption": "Go2 标准形态"
+          },
+          {
+            "src": "/uploads/unitree/products/go2-gallery-2.jpg",
+            "alt": "Go2 机器人侧面",
+            "caption": "运动姿态与结构细节"
+          },
+          {
+            "src": "/uploads/unitree/products/go2-gallery-3.jpg",
+            "alt": "Go2 机器人特写",
+            "caption": "结构细节"
+          },
+          {
+            "src": "/uploads/unitree/products/go2-gallery-4.jpg",
+            "alt": "Go2 机器人应用画面",
+            "caption": "真实应用场景"
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "参数、交付与体验优先级",
+        "items": [
+          {
+            "title": "4D 激光雷达与感知",
+            "description": "以超广角感知和动作反馈建立更稳定的移动与陪伴交互基础。",
+            "icon": ""
+          },
+          {
+            "title": "陪伴交互与开发接口",
+            "description": "既能做消费者可感知的互动，也能作为科研与算法验证入口。",
+            "icon": ""
+          },
+          {
+            "title": "销售与交付链路",
+            "description": "详情页保持联系型转化逻辑，不强塞不真实的电商价格模块，而是引导销售咨询和项目确认。",
+            "icon": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "media-text",
+      "props": {
+        "eyebrow": "产品说明",
+        "title": "Go2 不只是宠物感外观，而是具身智能入口平台",
+        "description": "关键详情页要同时承担读图、读参数和读价值，而不是只有一句 slogan。",
+        "body": [
+          "Go2 延续宇树四足平台在运动能力上的稳定性，并通过更友好的交互方式把机器人体验从单纯演示扩展到陪伴、开发和轻场景作业。",
+          "在正式交付语境里，它的意义并不是“会动的展示装置”，而是可切进消费体验、教育科研和具身开发的真实平台。"
+        ],
+        "image": "/uploads/unitree/products/go2-side.jpg",
+        "imageAlt": "Go2 侧面",
+        "buttonLabel": "联系团队获取配置建议",
+        "buttonHref": "/contact",
+        "layout": "image-right"
+      }
+    },
+    {
+      "type": "faq",
+      "props": {
+        "title": "关键信息",
+        "items": [
+          {
+            "question": "适合哪些用户或场景？",
+            "answer": "适合消费级陪伴体验、教育科研、算法验证、机器人展示和轻量化具身应用入口。"
+          },
+          {
+            "question": "是否支持二次开发？",
+            "answer": "支持通过开发接口进入更深入的控制、感知和算法实验，是面向开发者相对友好的四足平台。"
+          },
+          {
+            "question": "如何确认交付配置？",
+            "answer": "建议先沟通使用目标、是否需要开发接口、期望交互方式和交付周期，再由销售与技术团队确认具体配置。"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "准备咨询 Go2 的配置、交付周期或应用场景？",
+        "description": "直接把需求发给宇树团队，我们会根据使用场景与开发深度给出建议。",
+        "buttonLabel": "联系销售",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string
+  paragraphs: string[]
+}
+
+const { title, paragraphs } = Astro.props
+---
+
+<section class="block panel content-block">
+  <h2 class="section-title">{title}</h2>
+  <div class="content-block__body">
+    {paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,53 @@
+---
+import { isExternalLink, withLocaleParam } from '@/lib/i18n'
+
+interface Item {
+  title: string
+  subtitle?: string
+  description: string
+  image: string
+  href?: string
+  tag?: string
+}
+
+interface Props {
+  eyebrow?: string
+  title: string
+  description?: string
+  variant?: 'product' | 'solution' | 'news'
+  items: Item[]
+}
+
+const { eyebrow, title, description, variant = 'product', items } = Astro.props
+---
+
+<section class={`block panel showcase showcase--${variant}`}>
+  <div class="showcase__header">
+    {eyebrow && <span class="hero__eyebrow">{eyebrow}</span>}
+    <h2 class="section-title">{title}</h2>
+    {description && <p class="section-description">{description}</p>}
+  </div>
+  <div class="showcase__grid">
+    {items.map((item) => {
+      const href = item.href ? (isExternalLink(item.href) ? item.href : withLocaleParam(item.href)) : undefined
+      return (
+        <article class="showcase-card">
+          <div class="showcase-card__media">
+            <img src={item.image} alt={item.title} loading="lazy" />
+          </div>
+          <div class="showcase-card__body">
+            {item.tag && <span class="showcase-card__tag">{item.tag}</span>}
+            <h3>{item.title}</h3>
+            {item.subtitle && <p class="showcase-card__subtitle">{item.subtitle}</p>}
+            <p class="showcase-card__description">{item.description}</p>
+            {href && (
+              <a class="button button--secondary" href={href} target={isExternalLink(item.href || '') ? '_blank' : undefined}>
+                进入页面
+              </a>
+            )}
+          </div>
+        </article>
+      )
+    })}
+  </div>
+</section>

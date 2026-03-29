@@ -1,0 +1,45 @@
+{
+  "id": "b2",
+  "pageType": "product-detail",
+  "slug": "/b2",
+  "title": "B2",
+  "seo": {
+    "title": "机器狗B2_巡检机器人_B2机器狗优势用途 | 宇树科技",
+    "description": "B2 面向工业级巡检与复杂地形任务，强调速度、负载、续航与场景交付。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "工业级四足机器人",
+        "title": "B2 面向复杂地形巡检和高负载任务。",
+        "description": "适合厂区、电站、园区和高风险巡检场景，承接更高续航、更大负载和更强稳定性需求。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回方案页",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/solutions/solution-modular.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "B2 关注重点",
+        "items": [
+          { "title": "复杂地形通过", "description": "适应真实工业现场环境。", "icon": "" },
+          { "title": "大载荷平台", "description": "支持更多传感器与任务部件。", "icon": "" },
+          { "title": "项目型交付", "description": "适合与行业方案一体化落地。", "icon": "" }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "需要工业级巡检平台？",
+        "description": "告诉我们现场环境、任务目标和期望载荷。",
+        "buttonLabel": "联系团队",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

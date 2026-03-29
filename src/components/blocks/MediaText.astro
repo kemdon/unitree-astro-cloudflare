@@ -1,0 +1,40 @@
+---
+import { withLocaleParam } from '@/lib/i18n'
+
+interface Props {
+  eyebrow?: string
+  title: string
+  description: string
+  body: string[]
+  image: string
+  imageAlt?: string
+  buttonLabel?: string
+  buttonHref?: string
+  layout: 'image-left' | 'image-right'
+}
+
+const { eyebrow, title, description, body, image, imageAlt, buttonLabel, buttonHref, layout } = Astro.props
+---
+
+<section class={`block panel media-text media-text--${layout}`}>
+  <div class="media-text__media">
+    {image ? (
+      <img src={image} alt={imageAlt || title} loading="lazy" />
+    ) : (
+      <div class="media-text__placeholder">{title}</div>
+    )}
+  </div>
+  <div class="media-text__content">
+    {eyebrow && <span class="hero__eyebrow">{eyebrow}</span>}
+    <h2 class="section-title">{title}</h2>
+    <p class="section-description">{description}</p>
+    <div class="content-block__body">
+      {body.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </div>
+    {buttonLabel && buttonHref && (
+      <a class="button button--primary" href={withLocaleParam(buttonHref)}>{buttonLabel}</a>
+    )}
+  </div>
+</section>

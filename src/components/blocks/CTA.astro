@@ -1,0 +1,18 @@
+---
+import { withLocaleParam } from '@/lib/i18n'
+
+interface Props {
+  title: string
+  description?: string
+  buttonLabel: string
+  buttonHref: string
+}
+
+const { title, description, buttonLabel, buttonHref } = Astro.props
+---
+
+<section class="block panel cta">
+  <h2 class="section-title">{title}</h2>
+  {description && <p class="section-description">{description}</p>}
+  <a class="button button--primary" href={withLocaleParam(buttonHref)}>{buttonLabel}</a>
+</section>

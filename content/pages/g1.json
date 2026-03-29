@@ -1,0 +1,36 @@
+{
+  "id": "g1",
+  "pageType": "product-detail",
+  "slug": "/g1",
+  "title": "G1",
+  "seo": {
+    "title": "人形机器人G1_人形机器人功能作用_人形机器人价格 | 宇树科技",
+    "description": "G1 作为人形机器人平台，强调灵活性、数据采集与具身操作。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "人形机器人",
+        "title": "G1 让人形平台进入数据采集与通用操作场景。",
+        "description": "围绕运动能力、灵活操作和训练数据平台，G1 代表宇树向更复杂具身任务延伸的方向。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看详情页基准",
+        "secondaryCtaHref": "/go2",
+        "image": "/uploads/unitree/home/robot-g1.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "G1 关注重点",
+        "items": [
+          { "title": "灵活操作", "description": "适合研究与复杂任务验证。", "icon": "" },
+          { "title": "数采训练", "description": "承接具身智能训练链路。", "icon": "" },
+          { "title": "平台开放性", "description": "适配更多开发和实验需求。", "icon": "" }
+        ]
+      }
+    }
+  ]
+}

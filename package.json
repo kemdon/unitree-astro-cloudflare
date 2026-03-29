@@ -1,0 +1,46 @@
+{
+  "name": "astro-cloudflare-admin-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npm run cf:setup:local && npm run build && node scripts/run-playwright.mjs test",
+    "cf:db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "cf:db:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "cf:db:seed:local": "wrangler d1 execute DB --local --file ./seed/d1-content.sql",
+    "cf:db:seed:remote": "wrangler d1 execute DB --remote --file ./seed/d1-content.sql",
+    "cf:db:generate-seed": "node scripts/generate-d1-seed.mjs",
+    "cf:db:setup:local": "npm run cf:db:generate-seed && npm run cf:db:migrate:local && npm run cf:db:seed:local",
+    "cf:db:setup:remote": "npm run cf:db:generate-seed && npm run cf:db:migrate:remote && npm run cf:db:seed:remote",
+    "cf:r2:sync:local": "node scripts/sync-r2-media.mjs --local",
+    "cf:r2:sync:remote": "node scripts/sync-r2-media.mjs --remote",
+    "cf:setup:local": "npm run cf:db:setup:local && npm run cf:r2:sync:local",
+    "cf:setup:remote": "npm run cf:db:setup:remote && npm run cf:r2:sync:remote",
+    "cf:deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^13.1.3",
+    "@astrojs/react": "^5.0.1",
+    "astro": "^6.0.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "wrangler": "^4.76.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.6.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}

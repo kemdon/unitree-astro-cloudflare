@@ -1,0 +1,36 @@
+{
+  "id": "h1",
+  "pageType": "product-detail",
+  "slug": "/h1",
+  "title": "H1",
+  "seo": {
+    "title": "通用人形机器人H1_双足机器人_人形智能机器人公司厂家 | 宇树科技",
+    "description": "H1 是宇树通用人形平台，面向更高等级的运动能力与双足场景。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "双足平台",
+        "title": "H1 面向全尺寸通用人形的运动与平台能力。",
+        "description": "围绕双足运动、人形结构和通用平台延展能力，H1 是宇树人形方向的重要支点。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/home/robot-h1.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "H1 关注重点",
+        "items": [
+          { "title": "双足运动能力", "description": "强调平台级运动基础。", "icon": "" },
+          { "title": "通用人形方向", "description": "适合具身研究与展示验证。", "icon": "" },
+          { "title": "前台承接清晰", "description": "从首页可直接进入，不丢失业务语义。", "icon": "" }
+        ]
+      }
+    }
+  ]
+}

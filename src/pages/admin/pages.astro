@@ -1,0 +1,29 @@
+---
+import '@/styles/global.css'
+import PageEditor from '@/components/admin/PageEditor'
+import { listPages } from '@/lib/storage'
+
+const pages = await listPages(Astro.locals.env)
+const initialSelectedId = Astro.url.searchParams.get('pageId') ?? undefined
+---
+
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin / Pages</title>
+  </head>
+  <body>
+    <div class="admin-wrap">
+      <div class="admin-header">
+        <div class="admin-toolbar">
+          <h1>页面管理</h1>
+          <form action="/api/admin/logout" method="post">
+            <button class="button button--secondary" type="submit">退出登录</button>
+          </form>
+        </div>
+      </div>
+      <PageEditor client:load pages={pages} initialSelectedId={initialSelectedId} />
+    </div>
+  </body>
+</html>
