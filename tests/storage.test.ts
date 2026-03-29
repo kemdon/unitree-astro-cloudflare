@@ -53,8 +53,8 @@ describe('storage fallback content', () => {
   it('loadSite falls back to bundled content when Cloudflare env is unavailable', async () => {
     const site = await loadSite()
 
-    expect(site.siteName).toBe('公司名称')
-    expect(site.navigation).toHaveLength(4)
+    expect(site.siteName).toBe('宇树科技 Unitree Robotics')
+    expect(site.navigation).toHaveLength(5)
   })
 
   it('listPages falls back to bundled content when Cloudflare env is unavailable', async () => {
@@ -74,7 +74,7 @@ describe('storage fallback content', () => {
   it('loadSite falls back when D1 contains malformed JSON', async () => {
     const site = await loadSite(createEnvReturning({ site: '{invalid-json' }))
 
-    expect(site.siteName).toBe('公司名称')
+    expect(site.siteName).toBe('宇树科技 Unitree Robotics')
   })
 
   it('loadSite falls back when D1 contains legacy schema data', async () => {
@@ -99,6 +99,6 @@ describe('storage fallback content', () => {
 
     const site = await loadSite(createEnvReturning({ site: legacySite }))
 
-    expect(site.siteName).toBe('公司名称')
+    expect(site.siteName).toBe('宇树科技 Unitree Robotics')
   })
 })
