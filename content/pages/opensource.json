@@ -1,0 +1,44 @@
+{
+  "id": "opensource",
+  "pageType": "standard",
+  "slug": "/opensource",
+  "title": "官方开源",
+  "seo": {
+    "title": "官方开源 - 宇树科技",
+    "description": "集中承接官方开源、开发资料和机器人生态入口。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Open Source",
+        "title": "官方开源页承接开发生态，而不是只放一个外链。",
+        "description": "该页面统一说明宇树在开源、开发资料与社区协作上的入口价值，并保留对正式产品页的回流。",
+        "primaryCtaLabel": "联系技术团队",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看 Go2",
+        "secondaryCtaHref": "/go2",
+        "image": "/uploads/unitree/solutions/solution-manage.jpg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "开发者入口",
+        "paragraphs": [
+          "对四足和人形平台而言，开源与 SDK 入口不是补充说明，而是推动开发者采用、研究协作和生态扩展的重要页面。",
+          "第二阶段先把该入口落成正式页面，第三阶段再由后台统一维护具体链接、资料和更新节奏。"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "需要对接开发与研究协作？",
+        "description": "可直接联系团队确认平台、接口和数据链路。",
+        "buttonLabel": "联系技术团队",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

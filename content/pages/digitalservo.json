@@ -1,0 +1,75 @@
+{
+  "id": "digitalservo",
+  "pageType": "product-detail",
+  "slug": "/DigitalServo",
+  "title": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生",
+  "seo": {
+    "title": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生 - 宇树科技",
+    "description": "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "产品与平台",
+        "title": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生",
+        "description": "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。",
+        "primaryCtaLabel": "联系咨询",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看行业方案",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/solutions/solution-manage.jpg"
+      }
+    },
+    {
+      "type": "media-text",
+      "props": {
+        "eyebrow": "产品说明",
+        "title": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生 的正式前台信息结构",
+        "description": "详情页需要承接定位、能力和转化，而不是只保留源站标题。",
+        "body": [
+          "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生 在正式前台中作为独立详情页承接浏览、比对和咨询，不直接退化成参数堆叠或下载页。",
+          "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。 第二阶段先用正式详情骨架锁定路由与内容语义，第三阶段再由后台继续补充字段、媒体和结构化资料。",
+          "当前路由 /DigitalServo 延续源站产品入口语义，同时保持与首页、分类页、详情页基准一致的深色科技感表达。"
+        ],
+        "image": "/uploads/unitree/solutions/solution-manage.jpg",
+        "imageAlt": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生",
+        "buttonLabel": "联系团队",
+        "buttonHref": "/contact",
+        "layout": "image-right"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生 的浏览重点",
+        "items": [
+          {
+            "title": "核心平台能力",
+            "description": "围绕本体、感知、载荷或操作能力建立正式浏览认知。",
+            "icon": ""
+          },
+          {
+            "title": "适用任务方向",
+            "description": "把该页面与消费级体验、行业场景或研发任务建立关系。",
+            "icon": ""
+          },
+          {
+            "title": "咨询与交付入口",
+            "description": "保持联系转化，而不把详情页做成信息孤岛。",
+            "icon": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "准备进一步了解 Unitree 无刷数字舵机 小巧紧凑 为具身智能应用而生？",
+        "description": "告诉我们你的应用场景、开发需求或交付周期。",
+        "buttonLabel": "联系宇树",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

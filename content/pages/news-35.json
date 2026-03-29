@@ -1,0 +1,44 @@
+{
+  "id": "news-35",
+  "pageType": "standard",
+  "slug": "/news/35",
+  "title": "Kung Fu Meets Spring, Unitree SFG Robots Present \"Cyber Real Kung Fu\" in the Year of the Horse",
+  "seo": {
+    "title": "Kung Fu Meets Spring, Unitree SFG Robots Present \"Cyber Real Kung Fu\" in the Year of the Horse - 宇树科技",
+    "description": "保留源站新闻详情的主题和传播语义，作为新闻详情模板的代表页面。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "精选新闻",
+        "title": "Kung Fu Meets Spring",
+        "description": "这篇新闻详情页保留源站高曝光事件的传播主题，并用正式详情页结构承接品牌叙事、技术可信度和延伸阅读入口。",
+        "primaryCtaLabel": "返回新闻中心",
+        "primaryCtaHref": "/news",
+        "secondaryCtaLabel": "查看首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/home/event-olympic.jpeg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "事件概述",
+        "paragraphs": [
+          "春晚级别的舞台事件对机器人公司而言，不只是一次曝光，而是把产品可靠性、动作表现和品牌辨识度集中展示给大众的关键节点。",
+          "正式新闻详情页需要承担“事件背景 + 品牌意义 + 延伸入口”的职责，因此保持强首屏、正文说明和后续 CTA 的完整节奏。"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "继续查看更多动态",
+        "description": "从新闻中心进入更多产品和赛事相关内容。",
+        "buttonLabel": "返回新闻中心",
+        "buttonHref": "/news"
+      }
+    }
+  ]
+}

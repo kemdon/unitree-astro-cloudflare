@@ -1,0 +1,45 @@
+{
+  "id": "app-go2",
+  "pageType": "standard",
+  "slug": "/app/go2",
+  "title": "Go2 APP 下载",
+  "seo": {
+    "title": "Go2 APP 下载 - 宇树科技",
+    "description": "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "正式扩展页",
+        "title": "Go2 APP 下载",
+        "description": "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。",
+        "primaryCtaLabel": "联系宇树",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/solutions/solution-manage.jpg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "页面说明",
+        "paragraphs": [
+          "Go2 APP 下载 已按正式前台页面落地，并保留源站的业务语义而不是做成简单跳转或占位页。",
+          "全球高性能四足机器人行业开创者，全球四足机器人行业应用的领航者。 当前阶段优先完成正式路由、可读内容和统一视觉骨架，避免第二阶段页面扩展回退成模板化空壳。",
+          "页面路径 /app/go2 后续会继续由第三阶段后台接管内容维护，但不改变当前与基准页一致的视觉主干。"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "继续浏览宇树正式站点",
+        "description": "从首页、方案页或详情页继续完成浏览链路。",
+        "buttonLabel": "返回首页",
+        "buttonHref": "/"
+      }
+    }
+  ]
+}

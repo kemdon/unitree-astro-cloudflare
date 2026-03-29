@@ -1,0 +1,35 @@
+{
+  "id": "terms",
+  "pageType": "standard",
+  "slug": "/terms",
+  "title": "条款与政策",
+  "seo": {
+    "title": "条款与政策 - 宇树科技",
+    "description": "统一承接站点条款、政策和基础说明。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Policy",
+        "title": "条款与政策页用于承接基础说明，而不是打断主站气质。",
+        "description": "即使是政策页，也要保持与基准页一致的视觉骨架、标题层级和正文节奏。",
+        "primaryCtaLabel": "联系宇树",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "返回首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/home/partners.png"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "政策说明",
+        "paragraphs": [
+          "本页面用于承接站点条款、联系说明、数据处理和基础法律信息，保持正式企业站所需的基础信息完整度。",
+          "第三阶段后台接入后，可以继续补充分段正文、发布日期和多语言内容，但不会改变当前页面骨架。"
+        ]
+      }
+    }
+  ]
+}

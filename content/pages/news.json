@@ -1,0 +1,69 @@
+{
+  "id": "news",
+  "pageType": "standard",
+  "slug": "/news",
+  "title": "新闻中心",
+  "seo": {
+    "title": "新闻中心 - 宇树科技",
+    "description": "整理宇树机器人产品发布、赛事事件和品牌动态，维持正式企业站的信息更新入口。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Newsroom",
+        "title": "品牌事件、产品发布和赛事动态统一收束到新闻中心。",
+        "description": "新闻页延续首页的科技感与强视觉结构，不退化成空白列表页。",
+        "primaryCtaLabel": "查看精选报道",
+        "primaryCtaHref": "/news/35",
+        "secondaryCtaLabel": "返回首页",
+        "secondaryCtaHref": "/",
+        "image": "/uploads/unitree/home/event-olympic.jpeg"
+      }
+    },
+    {
+      "type": "showcase-grid",
+      "props": {
+        "eyebrow": "精选动态",
+        "title": "围绕产品、赛事与高曝光事件组织内容入口",
+        "description": "新闻中心在第二阶段先承接代表性内容，后续第三阶段再交给后台扩展。",
+        "variant": "news",
+        "items": [
+          {
+            "title": "Kung Fu Meets Spring",
+            "subtitle": "Spring Festival Gala",
+            "description": "从春晚事件切入，展示宇树机器人在高曝光场景下的品牌表达。",
+            "image": "/uploads/unitree/home/event-olympic.jpeg",
+            "href": "/news/35",
+            "tag": "精选报道"
+          },
+          {
+            "title": "G1 Boxing",
+            "subtitle": "赛事与演示",
+            "description": "以动作演示和具身能力展示强化人形平台的传播张力。",
+            "image": "/uploads/unitree/home/robot-g1.jpg",
+            "href": "/boxing",
+            "tag": "赛事内容"
+          },
+          {
+            "title": "RoboCup",
+            "subtitle": "竞技方向",
+            "description": "把赛事入口和产品能力关联起来，而不是做成脱节的活动页。",
+            "image": "/uploads/unitree/home/robot-g1.jpg",
+            "href": "/robocup",
+            "tag": "延伸阅读"
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "需要更多品牌资料或媒体合作入口？",
+        "description": "可直接联系宇树团队获取更多资料。",
+        "buttonLabel": "联系宇树",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

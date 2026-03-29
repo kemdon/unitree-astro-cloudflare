@@ -1,0 +1,57 @@
+{
+  "id": "industry-fire-rescue",
+  "pageType": "standard",
+  "slug": "/industry/fireRescue",
+  "title": "四足机器人消防应急解决方案",
+  "seo": {
+    "title": "四足机器人消防应急解决方案 - 宇树科技",
+    "description": "围绕火场进入、危险区域探测、喷射辅助和远程侦检建立消防应急方案说明。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "消防应急方案",
+        "title": "四足机器人把危险环境的先遣侦检交给机器。",
+        "description": "从高温、烟雾、狭窄通道到复杂楼层地形，消防应急方案重点不在炫技，而在于把探测、喷射辅助与远程侦检链路落到真实现场。",
+        "primaryCtaLabel": "联系方案团队",
+        "primaryCtaHref": "/contact",
+        "secondaryCtaLabel": "查看行业方案",
+        "secondaryCtaHref": "/products",
+        "image": "/uploads/unitree/solutions/solution-cost.jpg"
+      }
+    },
+    {
+      "type": "features",
+      "props": {
+        "title": "消防方向关注重点",
+        "items": [
+          {
+            "title": "危险环境先遣探测",
+            "description": "在人员进入前先完成环境扫描、视频回传和关键点位判断。",
+            "icon": ""
+          },
+          {
+            "title": "多载荷协同",
+            "description": "结合热像、气体检测、喷射和通信中继能力形成任务组合。",
+            "icon": ""
+          },
+          {
+            "title": "与巡检体系共享平台",
+            "description": "消防方向继续继承四足行业平台，而不是脱离现有产品体系单独叙事。",
+            "icon": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "需要结合消防场景做方案评估？",
+        "description": "告诉我们目标场地、任务类型和安全要求。",
+        "buttonLabel": "提交场景需求",
+        "buttonHref": "/contact"
+      }
+    }
+  ]
+}

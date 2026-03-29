@@ -1,0 +1,44 @@
+{
+  "id": "industry-electricity",
+  "pageType": "standard",
+  "slug": "/industry/electricity",
+  "title": "四足智能巡检方案",
+  "seo": {
+    "title": "四足智能巡检方案 - 宇树科技",
+    "description": "保留源站行业方案入口，并由正式分类页与机器人详情页共同承接场景浏览。"
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "行业方案镜像入口",
+        "title": "四足智能巡检方案",
+        "description": "该页面保留源站 `/industry/electricity` 路由语义，并把正式浏览链路引导到冻结分类页 `/products`，避免第二阶段扩展页反向冲击关键分类页基线。",
+        "primaryCtaLabel": "进入正式方案页",
+        "primaryCtaHref": "/products",
+        "secondaryCtaLabel": "查看 B2",
+        "secondaryCtaHref": "/b2",
+        "image": "/uploads/unitree/solutions/solution-hero.jpg"
+      }
+    },
+    {
+      "type": "content",
+      "props": {
+        "title": "场景承接方式",
+        "paragraphs": [
+          "在正式前台中，电力巡检不是孤立 landing page，而是进入行业方案、机型筛选和项目咨询的一整套浏览路径。",
+          "因此这里保留一对一来源入口，同时把正式分类结构统一收束到 `/products`，维持第二阶段与基准页一致的浏览节奏。"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "title": "继续浏览正式方案与机型",
+        "description": "进入 `/products` 查看完整方案页，再从详情页继续咨询。",
+        "buttonLabel": "打开正式方案页",
+        "buttonHref": "/products"
+      }
+    }
+  ]
+}
